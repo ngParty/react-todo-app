@@ -1,0 +1,46 @@
+/* Collapsible */
+.collapsible {
+  display: flex;
+  flex-direction: column;
+}
+.collapsible:nth-of-type(1) {
+  border-top: 1px solid #e6e7e9;
+}
+.collapsible .collapsible-body {
+  transition: all 235ms ease-in-out 0s;
+  border-bottom: 1px solid var(--color-background-muted);
+  margin: 0;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0 0.75rem;
+}
+.collapsible .collapsible-body.is-open {
+  margin: 0;
+  max-height: 960px;
+  opacity: 1;
+  padding: 0.75rem;
+}
+
+.collapsible > label {
+  border-bottom: 1px solid #e6e7e9;
+  color: #41403e;
+  display: inline-block;
+  font-weight: 600;
+  margin: 0 0 -1px;
+  padding: 0.75rem;
+}
+.collapsible > label:hover {
+  color: var(--color-text-muted);
+  cursor: pointer;
+}
+
+/* icon */
+.toggle-icon {
+  display: inline-block;
+  transition: transform ease-out 250ms;
+  margin-right: 1rem;
+}
+.toggle-icon.open {
+  transform: rotate(90deg);
+}
