@@ -1,0 +1,25 @@
+html {
+  --color-text: #41403e;
+  --color-text-muted: #868e96;
+  --color-background: #fff;
+  --color-background-muted: #e6e7e9;
+  --color-focus: #0071de;
+  --color-after-content: #8f8d89;
+  --color-box-shadow: rgba(0, 0, 0, 0.2);
+  --content-line: '~~~';
+}
+
+body {
+  font-family: Neucha, sans-serif;
+  transition: all ease-out 250ms;
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+.dark-mode {
+  --color-text: #e7e4de;
+  --color-box-shadow: rgba(255, 255, 255, 0.9);
+  --color-text-muted: #aaaeb1;
+  --color-background: #41403e;
+  --color-background-muted: #78909c;
+}

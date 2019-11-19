@@ -1,0 +1,56 @@
+.btn {
+  box-sizing: inherit;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  -webkit-appearance: button;
+  font-family: Neucha, sans-serif;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  box-shadow: 15px 28px 25px -18px rgba(0, 0, 0, 0.2);
+  transition: all 235ms ease-in-out 0s;
+  align-self: center;
+  background-color: var(--color-background);
+  border: 2px solid var(--color-text);
+  color: var(--color-text);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  outline: 0;
+  padding: 0.55rem;
+}
+
+.btn.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn:hover {
+  transform: translate3d(0, 2px, 0);
+  box-shadow: 2px 8px 8px -5px rgba(0, 0, 0, 0.3);
+}
+.btn:focus {
+  border: 2px solid var(--color-focus);
+  box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
+}
+.btn:active {
+  border-color: rgba(0, 0, 0, 0.2);
+  transition: none;
+}
+
+.btn-close {
+  transition: all 235ms ease-in-out 0s;
+  color: #5b5a57;
+  cursor: pointer;
+  margin-left: 0.75rem;
+  border: none;
+  background: transparent;
+}
+.btn-close:active,
+.btn-close:focus,
+.btn-close:hover {
+  color: #272625;
+}
