@@ -18,6 +18,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --ignore-path .gitignore \"**/*.{js,jsx,ts,tsx,css,md,html}\" --write",
+    "lint": "eslint --ext .js,.ts,.tsx --format codeframe src",
     "ts-check": "tsc"
   },
   "eslintConfig": {
