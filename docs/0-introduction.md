@@ -9,6 +9,7 @@ In this tutorial you'll learn how to develop a basic application using React. Yo
 </div>
 
 React is a JavaScript library for building user interfaces for various platforms.
+
 [Learn more](https://reactjs.org/)
 
 ### Workshop skills prerequisites 👀:
