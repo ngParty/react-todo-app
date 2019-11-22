@@ -8,7 +8,7 @@ Hello and welcome to React Girls workshop ⚛️!
 
 This tutorial will take you step by step on how to create your own todo list application using React and TypeScript.
 
-> At the moment, it's not possible to complete this without a mentor as it lacks thorough explanation of every step, but that's what you are here right! 🤗
+> At the moment, it's not possible to complete this without a mentor as it lacks thorough explanation of every step. Actually, that's what your mentors are here for, right? 🤗
 
 [🚀 Let's start !](./0-introduction.md)
 
