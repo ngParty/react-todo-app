@@ -19,7 +19,8 @@
     "eject": "react-scripts eject",
     "format": "prettier --ignore-path .gitignore \"**/*.{js,jsx,ts,tsx,css,md,html}\" --write",
     "lint": "eslint --ext .js,.ts,.tsx --format codeframe src",
-    "ts-check": "tsc"
+    "ts-check": "tsc",
+    "playground": "ts-node -O '{\"isolatedModules\": false, \"module\": \"commonjs\"}' src/playground/"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,6 +38,7 @@
     ]
   },
   "devDependencies": {
-    "prettier": "1.19.1"
+    "prettier": "1.19.1",
+    "ts-node": "^8.5.2"
   }
 }
