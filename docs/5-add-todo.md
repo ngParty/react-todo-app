@@ -1,10 +1,10 @@
 # Add Todo
 
-### 🙇‍♀️ Exercise
+### 🙇‍♀️ Exercise 1
 
 1. create `AddTodo` component
 1. Use it within `App`
-1. implement add todo markup
+1. implement AddTodo view/markup (view === jsx)
 
 ```tsx
 <form className="section">
@@ -12,13 +12,21 @@
 </form>
 ```
 
-3. Now try to write something and press enter. What happened ?
+Now try to write something into our input and press <kbd>ENTER</kbd>. What happened ?
 
 ---
 
-Well as you've noticed, the browser was reloaded. That's not very app-y feeling right? But hey that's standard browser behaviour when we are inside `<form>` tag and press enter. Ok let's fix this.
+Well as you've noticed, the browser was reloaded. That's not very app-y feeling right?
 
-For that we will need to introduce new concept. Handling DOM events with React.
+Well, that's the standard browser behaviour.
+
+> when we are inside `<form>` tag and press enter, our form si submitted.
+
+Ok let's fix this.
+
+For that, we will need to introduce new concept ⚡️.
+
+#### Handling DOM events with React.
 
 In raw javascript, we do it like following:
 
@@ -31,30 +39,38 @@ formRef.addEventListener('click', (ev) => {
 
 Very imperative code indeed...
 
-Well React is declarative all the way, so this is how you register event listener on DOM element:
+Thankfully enough, React is declarative all the way, so this is how you register event listener on DOM element:
 
 ```tsx
 <button onClick={(ev)=>{}}>
 ```
 
-So every DOM event, can be registered via `on` + `EventName`.
+We can listen to every DOM event via `on` + `EventName` prop.
 
-### 🙇‍♀️ Exercise
+> In this case `click` -> `onClick`
+
+### 🙇‍♀️ Exercise 2
 
 1. register `submit` handler on form and prevent page reload on enter
+
+**TIPS:**
+
+Following React TypeScript might come handy:
+
+- `React.FormEvent<HTMLFormElement>`
 
 ---
 
 Now we need to process and store that input value somewhere right?
 
-We have 2 approaches how to handle form data in React
+We have 2 approaches how to handle form data in React:
 
-- controlled
-- uncontrolled
+- [Controlled](https://reactjs.org/docs/forms.html#controlled-components)
+- [Uncontrolled](https://reactjs.org/docs/uncontrolled-components.html)
 
-For this component, let's use uncontrolled approach.
+For this component, let's go with uncontrolled approach.
 
-### 🙇‍♀️ Exercise
+### 🙇‍♀️ Exercise 3
 
 1. learn about `useRef` and `ref` prop
 1. create `inputRef` to reference input node element `const inputRef = useRef<HTMLInputElement>(null);`
@@ -110,6 +126,8 @@ if (inputRef.current) {
 
 Ok everything works, it seems, except it doesn't haha.
 
+### 🙇‍♀️ Exercise 4
+
 We need to propagate some data up via our `onAdd` props. In our case, we wanna create new Todo object and pass it up to the parent.
 
 1. create `todo.model.ts`
@@ -132,7 +150,7 @@ export const createTodo = (title: string): TodoModel => {
 };
 ```
 
-Now let's hop back to to `AddTodo` and tweak our submit handler
+Now let's hop back to to `AddTodo` and tweak our submit handler.
 
 1. create new todo object within `onSubmit` handler and propagate it upward by calling prop.onAdd
 1. process that todo within `App` and console log it
@@ -167,6 +185,8 @@ const AddTodo = (props: { onAdd: (todo: TodoModel) => void }) => {
 
 Last task in this chapter awaits!
 
+### 🙇‍♀️ Exercise 5
+
 We need to update our state with this new todo!
 
 1. implement `handleAddTodo` function within app
@@ -185,6 +205,14 @@ const handleAddTodo = (todo: TodoModel) => {
 ```
 
 Now you should see new item logged out in console!
+
+## 🤖 Extra Exercise
+
+If you're brave enough 💪, let's refactor our input management via controlled approach.
+
+1. remove useHref
+1. add internal input state via `useState`
+1. apply controlled approach on event via `value` and `onChange`
 
 ---
 

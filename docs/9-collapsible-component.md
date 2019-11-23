@@ -41,6 +41,10 @@ export const Collapsible = (props: {
 1. extract collapsible styles from `app.css` to `collapsible.css`
 1. import `collapsible.css` to `collapsible.tsx`
 
+1. use `Collapsible` within `App`
+1. Define title that will render "Completed Items (COUNT)"
+1. Implement proper pluralization of "Item"
+
 ---
 
 [🚀 Implement dark mode](./10-dark-mode.md)

@@ -109,3 +109,18 @@ export const App = () => {
   };
 }
 ```
+
+## 🤖 Extra Exercise
+
+1. use local storage hook to persist dark mode !
+1. make dark-mode-toggle a controlled component
+
+Wooot, you're done! You've made it. High 5!
+
+Now what ?
+
+Let's polish our codebase a bit shall we?
+
+---
+
+[🚀 Let's polish our app scaffolding](./12-refactor-scaffolding.md)
