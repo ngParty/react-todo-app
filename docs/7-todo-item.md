@@ -106,4 +106,4 @@ const handleTextChangeTodo = (todo: TodoModel) => {
 
 ---
 
-[🚀 Implement complete CRUD](./8-compete-crud.md)
+[🚀 Implement complete CRUD](./8-complete-crud.md)
