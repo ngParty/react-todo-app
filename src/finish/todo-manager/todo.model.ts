@@ -6,7 +6,7 @@ export interface TodoModel {
   title: string;
 }
 
-export const createTodo = (title: string) => {
+export const createTodo = (title: string): TodoModel => {
   return {
     id: uuidv4(),
     completed: false,
