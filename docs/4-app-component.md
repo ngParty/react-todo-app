@@ -19,11 +19,11 @@ import './app.css';
 const initialState = [{...}]
 ```
 
-### 🙇‍♀️ Exercise
+### 🙇‍♀️ Exercise 1
 
 1. log into console `initialState`
 1. wrap `h1` within `header` tag and add to it `row flex-center flex-edges` css classes
-1. rename h1 children to `Todo Manager`
+1. rename h1 `children` to `Todo Manager`
 
 ---
 
@@ -31,7 +31,7 @@ Almost done. We need to introduce state to our application by leveraging our `in
 
 In React we register stat via `useState` hook.
 
-### 🙇‍♀️ Exercise
+### 🙇‍♀️ Exercise 2
 
 1. learn about `useState`
 1. use `useState` and pass it `initialState` reference
@@ -50,7 +50,7 @@ export const App = () => {
 
 One last touch!
 
-### 🙇‍♀️ Exercise
+### 🙇‍♀️ Exercise 3
 
 1. add `section` tag as `header` sibling and add to it `paper` css class
 
@@ -61,11 +61,11 @@ Our app template should look like following:
   <header className="row flex-center flex-edges">
     <h1>Hello world!</h1>
   </header>
-  <section className="paper">add todo needed!</section>
+  <section className="paper">More markup incoming!</section>
 </div>
 ```
 
-We are done here. good job! Now, let's implement custom component for adding new todo!
+We are done here. good job! Now, let's implement a custom component for adding new todo!
 
 ---
 

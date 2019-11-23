@@ -59,7 +59,7 @@ Let's convert previous exercise to React!
 
 You're going to use raw React APIs here.
 
-raw API?
+What is React raw API?
 
 ```ts
 const elementType = 'h1';
@@ -69,6 +69,7 @@ ReactDOM.render(reactElement, rootElement);
 ```
 
 1. re-implement the regular document.createElement from previous step with raw React API calls
+   - **NOTE:** you'll need that `rootElement` reference used previously 👀
 
 ## 🤖 Extra Exercise
 
@@ -125,7 +126,10 @@ Components are basically functions which return something that is "renderable" (
 **TIPS:**
 
 - React component is just a function that returns JSX or `null`
-- Custom React components need to start with Uppercase letter, so React can distinguish custom components and intrinsic platform components (div,section and so on)
+- Custom React components need to start with _Uppercase letter_ so React can distinguish custom components and intrinsic platform components (div,section and so on)
+  - _Example_
+    - ✅ Hello, Todo
+    - ❌ hello, todo
 
 1. Let's transform previous jsx markup to custom component. Let's call it `Greeter`
 1. add `h1` tag as a child and render `Hello World` within that tag
@@ -139,7 +143,7 @@ Because React component is just a function, we can configure it via parameters. 
 
 **TIPS:**
 
-- Props is an object. In typescript you define object type like `{someNumber: number}`
+- "props" is an object. In TypeScript you define object type like `{someNumber: number}`
 - dynamic values are rendered via javascript expression -> `{myValue}
 
 1. add props to our `Greeter` component
@@ -148,9 +152,9 @@ Because React component is just a function, we can configure it via parameters. 
 
 ## Summary
 
-Nice! all done. now remove what you've written and uncomment `// ReactDOM.render(<App />, document.getElementById('root'));`
+Nice! all done. Now remove what you've written (sorry about that!) and uncomment `// ReactDOM.render(<App />, document.getElementById('root'));`
 
-With all new knowledge, we can finally start implementing our Todo App!
+With all this new knowledge, we can finally start implementing our Todo App!
 
 ---
 
