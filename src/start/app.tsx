@@ -6,23 +6,23 @@ import './app.css';
 const initialState = [
   {
     id: uuidv4(),
-    complete: false,
-    text: 'Learn React'
+    completed: false,
+    title: 'Learn React'
   },
   {
     id: uuidv4(),
-    complete: false,
-    text: 'Learn JavaScript'
+    completed: false,
+    title: 'Learn JavaScript'
   },
   {
     id: uuidv4(),
-    complete: false,
-    text: 'Learn TypeScript'
+    completed: false,
+    title: 'Learn TypeScript'
   },
   {
     id: uuidv4(),
-    complete: true,
-    text: 'Learn Something done!'
+    completed: true,
+    title: 'Learn Something done!'
   }
 ];
 
