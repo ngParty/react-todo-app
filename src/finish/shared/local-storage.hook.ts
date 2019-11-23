@@ -24,7 +24,9 @@ export const useLocalStorage = <T>(dbName: string, initialValue: T) => {
   // Pass initial state function to useState so logic is only executed once
   const [storageValue, setStorageValue] = useState(() => getValue());
 
-  return [storageValue, setValue] as const;
+  // @TODO report bug to codesandbox -> as const doesn't work with CRA 3
+  // return [storageValue, setValue] as const;
+  return [storageValue, setValue] as [T, (value: T) => void];
 };
 
 // const LocalStorage = <T extends unknown>(dbName: string, initialValue: T) => {
