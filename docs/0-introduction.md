@@ -19,7 +19,7 @@ React is a JavaScript library for building user interfaces for various platforms
 - Basic understanding of the DOM.
 - Familiarity with ES6 syntax and features.
 
-> ℹ️ If you don't have all of those all just few, you should be still ok, you have your awesome mentor! yay ⚡️
+> ℹ️ If you don't have all but just a few, you should still be ok, you have your awesome mentor! yay ⚡️
 
 ### Workshop Outline
 
